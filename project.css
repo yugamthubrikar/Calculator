@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calculator{
+    padding: 10px 10px;
+    margin: 10px;
+    width: 420px;
+    background-color: rgb(70, 15, 173); 
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    gap: 25px;
+    border-radius: 29px;
+}
+
+.output{
+    padding: 20px 20px;
+    margin: 10px 0;
+    grid-column: 1 / 5 span;
+    grid-row: 1 / 2 span;
+    background-color: rgb(135, 192, 65);
+    border-radius: 29px;
+    width: auto;
+}
+.calculator button{
+    border-radius: 20px;
+}
+
+
