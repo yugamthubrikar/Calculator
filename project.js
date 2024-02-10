@@ -1,9 +1,17 @@
 const display = document.getElementById('display');
 
 function onCalculator(){
+    let switchbtn = document.getElementById('onoff');
     buttons = document.getElementsByTagName('button');
-    for (i = 0;i < buttons.length; ++i) {
-        buttons[i].disabled = false;
+    if (switchbtn.checked) {
+        for (i = 0;i < buttons.length; ++i) {
+            buttons[i].disabled = false;
+        }
+    }
+    else {
+        for (i = 0;i < buttons.length; ++i) {
+            buttons[i].disabled = true;
+        }
     }
 }
 
