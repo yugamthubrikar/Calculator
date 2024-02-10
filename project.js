@@ -3,14 +3,17 @@ const display = document.getElementById('display');
 function onCalculator(){
     let switchbtn = document.getElementById('onoff');
     buttons = document.getElementsByTagName('button');
-    if (switchbtn.checked) {
+    if (switchbtn.value == "false") {
+        switchbtn.value = true;
         for (i = 0;i < buttons.length; ++i) {
             buttons[i].disabled = false;
         }
     }
     else {
+        switchbtn.value = false;
         for (i = 0;i < buttons.length; ++i) {
             buttons[i].disabled = true;
+            switchbtn.disabled = false;
         }
     }
 }
